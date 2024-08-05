@@ -68,8 +68,17 @@ const Weather = () => {
           <p>Description: {weatherData.weather[0].description} </p>
          
           <div className="flex text-center text-2xl items-center justify-between mt-8 gap-8 p-4 bg-[#202B3B]">
-          <p>Feels like <br /> {weatherData.main.feels_like}°C</p>
-          <p>Humidity <br /> {weatherData.main.humidity}%</p>
+            <div className="">
+              <p>Feels like</p>
+              <p>{weatherData.main.feels_like}°C</p>
+            </div>
+          <div>
+             <p>Humidity</p>
+             <p>{weatherData.main.humidity}%</p>
+           </div>
+           <div className="">
+            
+           </div>
           <p>Pressure <br /> {weatherData.main.pressure}</p>
           <p>Wind Speed <br /> {weatherData.wind.speed}m/s</p>
           </div>
