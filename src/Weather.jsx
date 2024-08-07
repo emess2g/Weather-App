@@ -43,7 +43,8 @@ const Weather = () => {
   };
 
   return (
-    <div className='flex flex-col border text-center p- justify-center items-center h-[80vh] w-[] m-4'>
+    <div className='flex flex-col  text-center p- justify-center items-center h-[80vh] w-[] m-4'>
+      <h1 className='mb-12 underline font-bold'>Simple Weather App</h1>
       <div className="w-[40%]">
       <form onSubmit={handleSubmit}>
         <input
@@ -77,14 +78,14 @@ const Weather = () => {
              <p>{weatherData.main.humidity}%</p>
            </div>
            <div className="">
-            
+
            </div>
           <p>Pressure <br /> {weatherData.main.pressure}</p>
           <p>Wind Speed <br /> {weatherData.wind.speed}m/s</p>
           </div>
         </>
       ) : (
-        <p>Loading weather data...</p>
+        <p className='mt-8 text-[gray]'> Type a City to Fetch Current Weather </p>
       )}
       </div>
       </div>
