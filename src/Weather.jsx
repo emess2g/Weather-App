@@ -63,7 +63,7 @@ const Weather = () => {
          <h2 className='text-8xl'>{weatherData.name}</h2>
            <div className="flex items-center justify-center" >
            <p className='text-4xl'> {weatherData.main.temp}°C</p>
-           <img className='w-[30%]' src={renderIcon()} alt="" />
+           <img className='w-[20%]' src={renderIcon()} alt="" />
            </div>
          </div>
           <p>Description: {weatherData.weather[0].description} </p>
